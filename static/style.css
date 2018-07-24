@@ -1,0 +1,170 @@
+body {
+  background-color: #0084ff;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.34;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto 2em auto;
+}
+
+.greeting {
+  color: #fff;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 3em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 4px 16px 0px #0000003d;
+  box-sizing: border-box;
+  padding: 12px;
+  padding-bottom: 0;
+  position: relative;
+}
+
+/* Top info bar */
+.metadata {
+  display: flex;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 8px;
+  padding-bottom: 3px;
+  width: 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 22px;
+}
+
+h5 {
+  color: #365899;
+  font-size: 14px;
+  line-height: 1.38;
+  margin-bottom: 2px;
+  margin: 0;
+}
+
+.date {
+  color: #616770;
+  font-size: 12px;
+}
+
+.underline:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Main text */
+.text {
+  margin-top: 6px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.38;
+  margin: 6px 0;
+}
+
+/* Buttons */
+.buttons {
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  padding: 4px 0;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  color: #616770;
+  cursor: pointer;
+  flex: 1;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  height: 32px;
+  line-height: 14px;
+  outline: 0;
+}
+button:hover {
+  background-color: rgba(29, 33, 41, .04);
+  border-radius: 2px;
+}
+button::before {
+  background-image: url(/static/buttons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  content: '';
+  display: inline-block;
+  height: 18px;
+  margin: 0 6px -3px 0;
+  min-width: 18px;
+  position: relative;
+  top: -2px;
+  width: 18px;
+}
+
+.like::before {
+  background-position: 0 -171px;
+}
+
+.comment::before {
+  background-position: 0 -114px;
+}
+
+/* Icons */
+i {
+  background-image: url(/static/icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: inline-block;
+}
+
+.arrow {
+  background-position: 0 -67px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  width: 16px;
+}
+
+.dots {
+  background-position: 0 -46px;
+  cursor: pointer;
+  height: 20px;
+  margin: 10px 7px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+
+.dots:hover {
+  background-position: -21px -46px;
+}
+
+.directions {
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 0.5em;
+  padding: 5px 12px;
+  text-decoration: none;
+} .directions:hover {
+  background-color: #ffffff24;
+}

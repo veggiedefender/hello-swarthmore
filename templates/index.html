@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Swarthmore 2022</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+  <h1 class="greeting">Hello Swarthmore</h1>
+  <div class="container">
+    <div class="card">
+      <i class="dots"></i>
+      <div class="metadata">
+        <img src="static/profile.jpg" class="profile-pic">
+        <div class="info">
+          <h5>
+            <span class="underline">Kid from Swarthmore</span><i class="arrow"></i><span class="underline">Swarthmore College Class of 2022</span>
+          </h5>
+          <div>
+            <span class="date underline" id="date">March 25</span>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <p>{{ text }}</p>
+      </div>
+      <div class="buttons">
+        <button class="like">Like</button>
+        <button class="comment">Comment</button>
+      </div>
+    </div>
+    <a class="directions" href="">Refresh the page to generate a new post.</a>
+  </div>
+  <script>
+    var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var d = new Date();
+    document.getElementById('date').innerText = monthNames[d.getMonth()] + ' ' + d.getDate();
+  </script>
+</body>
+</html>
