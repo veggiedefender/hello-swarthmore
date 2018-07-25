@@ -152,7 +152,6 @@ i {
   top: 0;
   width: 20px;
 }
-
 .dots:hover {
   background-position: -21px -46px;
 }
@@ -165,6 +164,7 @@ i {
   margin-top: 0.5em;
   padding: 5px 12px;
   text-decoration: none;
-} .directions:hover {
+}
+.directions:hover {
   background-color: #ffffff24;
 }
