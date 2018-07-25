@@ -31,6 +31,14 @@ body {
   position: relative;
 }
 
+.hoverable:hover {
+  cursor: pointer;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
 /* Top info bar */
 .metadata {
   display: flex;
@@ -61,11 +69,6 @@ h5 {
 .date {
   color: #616770;
   font-size: 12px;
-}
-
-.underline:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 /* Main text */
@@ -144,7 +147,6 @@ i {
 
 .dots {
   background-position: 0 -46px;
-  cursor: pointer;
   height: 20px;
   margin: 10px 7px 0 0;
   position: absolute;
