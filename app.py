@@ -21,3 +21,7 @@ def make_post():
 @app.route("/")
 def hello():
     return render_template("index.html", text=make_post())
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
