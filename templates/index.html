@@ -30,12 +30,17 @@
         <button class="comment">Comment</button>
       </div>
     </div>
-    <a class="directions" href="">Refresh the page to generate a new post.</a>
+    <a class="directions" href="">Refresh the page or press <kbd>R</kbd> to generate a new post.</a>
   </div>
   <script>
     var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     var d = new Date();
     document.getElementById('date').innerText = monthNames[d.getMonth()] + ' ' + d.getDate();
+    document.addEventListener('keypress', function(e) {
+      if (e.key === 'r' || e.key === 'R') {
+        window.location.reload();
+      }
+    });
   </script>
 </body>
 </html>

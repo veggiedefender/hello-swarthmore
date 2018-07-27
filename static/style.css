@@ -7,6 +7,12 @@ body {
   flex-direction: column;
 }
 
+kbd {
+  padding: 3px 7px;
+  border-radius: 3px;
+  background-color: #ffffff24;
+}
+
 .container {
   max-width: 500px;
   margin: 0 auto 2em auto;
